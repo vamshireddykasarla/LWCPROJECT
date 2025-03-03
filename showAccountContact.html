@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title={title}>
+        <template if:true={hasContacts}>
+        <template for:each={contacts} for:item="con">
+       <lightning-layout key={con.Id} class="slds-box slds-m-around_medium">
+        <lightning-layout-item>
+            <b>{con.Name}</b>
+        </lightning-layout-item>
+       </lightning-layout>
+    </template>
+</template>
+<template if:false={hasContacts}>
+    <div class=" slds-align_absolute-center">No contacts found</div>
+
+</template>
+    </lightning-card>
+    
+</template>
