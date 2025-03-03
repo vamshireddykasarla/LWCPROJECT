@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata/lightning">
+    <isExposed>true</isExposed>
+    <masterLabel>Marvel</masterLabel>
+    <description>Message channel for communication between components</description>
+    
+    <lightningMessageFields>
+        <fieldName>accountId</fieldName>
+        <description>Message to send Account Id</description>
+    </lightningMessageFields>
+
+    <lightningMessageFields>
+        <fieldName>accountName</fieldName>
+        <description>Message to send Account Name</description>
+    </lightningMessageFields>
+</LightningMessageChannel>
